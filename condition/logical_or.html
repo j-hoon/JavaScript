@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<script>
+			// ||
+			if(true || true) {
+				alert(1);
+			}
+			if(true || false) {
+				alert(2);
+			}
+			if(false || true) {
+				alert(3);
+			}
+			if(false || false) {
+				alert(4);
+			}
+
+			// ex
+			/*
+			id = prompt('아이디를 입력해주세요.');
+			if(id === 'egoing' || id === 'k8805' || id === 'sorialgi') {
+				alert('인증 했습니다.');
+			} else {
+				alert('인증에 실패 했습니다.');
+			}
+			*/
+			id = prompt('아이디를 입력해주세요.');
+			password = prompt('비밀번호를 입력해주세요.');
+			if((id === 'egoing' || id === 'k8805' || id === 'sorialgi') && password === '111111') {
+				alert('인증 했습니다.');
+			} else {
+				alert('인증에 실패 했습니다.');
+			}
+		</script>
+	</body>
+</html>

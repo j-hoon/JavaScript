@@ -1,0 +1,30 @@
+<html>
+	<body>
+		<script>
+			if(0) {	// flase
+				alert(1)
+			}
+			if(1) {	// true (not 0)
+				alert(2)
+			}
+
+			/* false로 간주되는 데이터 형 */
+			if(!'') {					// '' - 빈 문자열
+				alert('빈 문자열')
+			}
+			if(!undefined) {	// undefined
+				alert('undefined');
+			}
+			var a;
+			if(!a) {					// 값이 할당되지 않은 변수
+				alert('값이 할당되지 않은 변수');
+			}
+			if(!null) {				// null
+				alert('null');
+			}
+			if(!NaN) {				// NaN
+				alert('NaN');
+			}
+		</script>
+	</body>
+</html>
